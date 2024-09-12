@@ -2,7 +2,7 @@
 import tkinter
 import os;
 from functools import partial
-import tcp_connector 
+import tcp_connector
 
 
 class Correctform :
@@ -48,7 +48,7 @@ class Correctform :
     def ok_func(self) :
         #self.ok_button.config(text = str(self.var.get()));
         #self.socket.mysend(self.var.get().to_bytes());
-        self.socket.mysend(self.ivar.to_bytes());
+        self.socket.mysend(self.ivar.to_bytes(length=1, byteorder="big", signed=False));
         with open(self.script_dir+"result_img.jpg", "rb") as f:
             byte = f.read();
             self.socket.mysend(byte);
