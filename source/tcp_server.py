@@ -48,7 +48,8 @@ def handle_client(clientsocket):
                 print(int.from_bytes(data));
                 file_dir_index = int.from_bytes(data);
             else :
-                with open(os.path.dirname(os.path.abspath(__file__)) + file_dir[file_dir_index] + "test.jpg", "wb") as f :
+                file_len = len(os.listdir(os.path.dirname(os.path.abspath(__file__)) + file_dir[file_dir_index]));
+                with open(os.path.dirname(os.path.abspath(__file__)) + file_dir[file_dir_index] + str(file_len) + ".jpg", "wb") as f :
                     f.write(data);
             clientsocket.sendall(data)
         except ConnectionResetError:
