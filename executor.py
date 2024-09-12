@@ -1,4 +1,6 @@
-from source import Mainform;
+from source import Venv_activator;
+import os;
 
 
-Mainform.Mainform();
+Venv_activator.run_in_venv(os.path.dirname(os.path.abspath(__file__)) + "\\source\\Mainform.py");
+
