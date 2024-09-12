@@ -2,8 +2,7 @@
 import tkinter
 import os;
 from functools import partial
-from source import tcp_connector 
-#import tcp_connector
+import tcp_connector 
 
 
 class Correctform :
