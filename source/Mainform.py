@@ -6,10 +6,8 @@ import PIL;
 import PIL.ImageTk;
 import PIL.Image;
 import os;
-from source import AI_classifier;
-from source import Correctform;
-#import AI_classifier;
-#import Correctform;
+import AI_classifier;
+import Correctform;
 
 
 result_img = 0;
