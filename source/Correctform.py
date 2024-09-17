@@ -13,9 +13,9 @@ class Correctform :
         self.socket = tcp_connector.Mysocket();
         try :
             self.script_dir = os.path.dirname(os.path.abspath(__file__)) + '\\';
-            with open(self.script_dir+"IPnPort.txt", mode = "r") as f :
-                temp = f.readline();
-                IPnPort = temp.replace(" ","").split(";");
+            with open(self.script_dir+"define.txt", mode = "r") as f :
+                temp = f.readlines();
+                IPnPort = temp[0].split("=")[1].strip().replace(" ","").split(";");
                 self.socket.connect(IPnPort[0],int(IPnPort[1]));
                 self.label_text = "당신은 이걸 무어라 생각하시나요?"
         except Exception as e :

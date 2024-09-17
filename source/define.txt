@@ -1,0 +1,3 @@
+IPnPort = 127.0.0.1;8080
+classifier_type = pt
+classifier_file = PyTorch_Training_From_Scratch.pt
