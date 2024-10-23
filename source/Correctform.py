@@ -26,8 +26,8 @@ class Correctform :
 
         self.var = tkinter.IntVar();
         self.rb1 = tkinter.Radiobutton(self.window, text = "캔", variable = self.var, value = 0, anchor = "w", width= 50);
-        self.rb2 = tkinter.Radiobutton(self.window, text = "유리병", variable = self.var, value = 1, anchor = "w", width= 50);
-        self.rb3 = tkinter.Radiobutton(self.window, text = "스티로폼", variable = self.var, value = 2, anchor = "w", width= 50);
+        self.rb2 = tkinter.Radiobutton(self.window, text = "유리병/PET", variable = self.var, value = 1, anchor = "w", width= 50);
+        self.rb3 = tkinter.Radiobutton(self.window, text = "종이", variable = self.var, value = 2, anchor = "w", width= 50);
         self.rb1.config(command = partial(self.rb_click, 0));
         self.rb2.config(command = partial(self.rb_click, 1));
         self.rb3.config(command = partial(self.rb_click, 2));
