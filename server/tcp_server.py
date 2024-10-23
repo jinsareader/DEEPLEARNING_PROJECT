@@ -3,7 +3,7 @@ import tkinter
 import threading
 import os
 
-file_dir = ["\\can\\", "\\glass\\", "\\ST\\"];
+file_dir = ["\\can\\", "\\bottle\\", "\\paper\\"];
 file_dir_index = 0;
 
 
